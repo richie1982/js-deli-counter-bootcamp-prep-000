@@ -13,9 +13,10 @@ function nowServing(katzDeliLine){
 }
 
 function currentLine(katzDeliLine, name){
+  var line = []
   if (katzDeliLine>[]){
     for (var i = 0; i<katzDeliLine.length; i++){
-  return `The line is currently ${katzDeliLine.length}. ${name},`
+      line.push(`${i}. ${name}`);
       }
   }else{
     return "The line is currently empty.";
